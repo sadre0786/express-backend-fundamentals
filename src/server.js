@@ -1,4 +1,5 @@
-import app from "./app.js";
+// import app from "./app.js";
+import app from "../src/middleware/app.js"
 // Importing the Express app instance
 // IMPORTANT: .js extension is mandatory in ESM
 

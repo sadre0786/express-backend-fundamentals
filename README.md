@@ -11,3 +11,17 @@ of core Express.js backend concepts.
 ## Purpose
 To understand how backend systems work internally
 and how scalable Express applications are structured.
+
+
+### Middleware Design Patterns
+
+- Global logging middleware
+- Route-level authentication middleware
+- Validation-style guard middleware
+
+
+### Centralized Error Handling
+
+Implemented a centralized error-handling middleware
+using a custom error class to ensure consistent
+and maintainable error responses.
