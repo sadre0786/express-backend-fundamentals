@@ -25,3 +25,17 @@ and how scalable Express applications are structured.
 Implemented a centralized error-handling middleware
 using a custom error class to ensure consistent
 and maintainable error responses.
+
+### Validation & Sanitization
+
+Implemented request validation and sanitization
+using middleware to ensure data integrity
+and prevent invalid requests.
+
+### REST API Standards
+
+Implemented RESTful user APIs using:
+- Resource-based URLs
+- Proper HTTP methods
+- Correct status codes
+- Consistent response structure

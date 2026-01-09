@@ -1,8 +1,14 @@
 import express from "express"; 
+import userRoutes from "./routes/user.route.js"
 // Importing Express framework (ESM syntax)
 
 // Creating an Express application instance
 const app = express();
+/*
+  Body parser middleware
+  Required for POST requests
+*/
+app.use(express.json());
 
 // Global middleware
 // This runs on EVERY incoming request before it reaches any route
@@ -11,6 +17,7 @@ app.use((req, res, next) => {
     // Always call next(), otherwise request will hang
     next();
 });
+app.use('/users',userRoutes)
 
 // Root route (GET /)
 // This is just a test endpoint to verify server is running

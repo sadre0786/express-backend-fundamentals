@@ -3,6 +3,7 @@ import logger from "./logger.middleware.js";
 import auth from "./auth.middleware.js";
 
 const app = express();
+app.use(express.json())
 
 // global middleware for logger
 app.use(logger);
