@@ -39,3 +39,10 @@ Implemented RESTful user APIs using:
 - Proper HTTP methods
 - Correct status codes
 - Consistent response structure
+
+### API Versioning
+
+Implemented URL-based API versioning (v1 and v2)
+to support backward compatibility and safe evolution
+of REST APIs.
+

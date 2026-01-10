@@ -1,5 +1,7 @@
 import express from "express"; 
 import userRoutes from "./routes/user.route.js"
+import v1UserRoutes from "./routes/v1/user.routes.js"
+import v2UserRoutes from "./routes/v2/user.rooutes.js"
 // Importing Express framework (ESM syntax)
 
 // Creating an Express application instance
@@ -18,7 +20,11 @@ app.use((req, res, next) => {
     next();
 });
 app.use('/users',userRoutes)
-
+/*
+  API Versioning
+*/
+app.use("/api/v1/users", v1UserRoutes);
+app.use("/api/v2/users", v2UserRoutes);
 // Root route (GET /)
 // This is just a test endpoint to verify server is running
 app.get("/", (req, res) => {

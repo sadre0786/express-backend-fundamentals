@@ -3,7 +3,7 @@ const router = express.Router();
 /*
   Import controller functions
 */
-import {getAllUsers,getUserById,createUser,deleteUser} from "../controllers/user.controller";
+import {getAllUsers,getUserById,createUser,deleteUser} from "../controllers/user.controller.js";
 
 
 /*

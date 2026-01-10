@@ -5,7 +5,7 @@
 */
 
 // GET /users
-export default function getAllUsers(req, res) {
+export function getAllUsers(req, res) {
     res.status(200).json({
         success: true,
         data: []
@@ -13,7 +13,7 @@ export default function getAllUsers(req, res) {
 }
 
 // GET /users/:id
-export default function getUserById(req, res) {
+export function getUserById(req, res) {
     res.status(200).json({
         success: true,
         data: {
@@ -23,7 +23,7 @@ export default function getUserById(req, res) {
 }
 
 // POST /users
-export default function createUser(req, res) {
+export function createUser(req, res) {
     res.status(201).json({
         success: true,
         message: "User created successfully",
@@ -32,7 +32,7 @@ export default function createUser(req, res) {
 }
 
 // DELETE /users/:id
-export default function deleteUser(req, res) {
+export function deleteUser(req, res) {
     res.status(200).json({
         success: true,
         message: `User with id ${req.params.id} deleted`
